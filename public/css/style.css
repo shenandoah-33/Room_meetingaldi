@@ -1,0 +1,26 @@
+.main {
+    height: 100vh;
+}
+
+/* CSS SIDE BAR */
+.sidebar {
+    background: #7e7d7d;
+    color: #fff;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 20px 10px;
+}
+
+.sidebar a:hover {
+    background: #470808;
+}
+
+.active {
+    background: #470808;
+    border-right: solid 8px blue;
+}
+/* CSS SIDE BAR */
