@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\RoomController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\BookingController;
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\DashboardController;
 
 /*
@@ -32,5 +34,8 @@ Route::middleware('auth')->group(function() {
     Route::get('logout', [AuthController::class, 'logout']);
     Route::get('dashboard', [DashboardController::class, 'index'])->middleware(['auth', 'only_admin']);
     Route::get('profile', [UserController::class, 'profile'])->middleware(['auth', 'only_client']);
-    Route::get('rooms', [RoomController::class, 'index'])->middleware('auth');
+    Route::get('rooms', [RoomController::class, 'index']);
+    Route::get('categories', [CategoryController::class, 'index']);
+    Route::get('users', [UserController::class, 'index']);
+    Route::get('booking', [BookingController::class, 'index']);
 });

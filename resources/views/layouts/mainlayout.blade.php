@@ -27,16 +27,16 @@
                 <div class="sidebar col-lg-2 collapse d-lg-block" id="navbarTogglerDemo02">
                   @if (Auth::user())              
                         @if (Auth::user()->role_id == 1)
-                            <a href="/dashboard">Dashboard</a>
-                            <a href="/users">Users</a>
-                            <a href="/rooms">Rooms</a>
-                            <a href="/categories">Categories</a>
-                            <a href="/booking">Booking</a>
-                            <a href="/room-booking">Room Booking</a>
-                            <a href="/room-return">Room Return</a>
+                            <a href="/dashboard" @if(request()->route()->uri == 'dashboard') class='active' @endif>Dashboard</a>
+                            <a href="/users" @if(request()->route()->uri == 'users') class='active' @endif>Users</a>
+                            <a href="/rooms" @if(request()->route()->uri == 'rooms') class='active' @endif>Rooms</a>
+                            <a href="/categories" @if(request()->route()->uri == 'categories') class='active' @endif>Categories</a>
+                            <a href="/booking" @if(request()->route()->uri == 'booking') class='active' @endif>Booking</a>
+                            <a href="/room-booking" @if(request()->route()->uri == 'room-booking') class='active' @endif>Room Booking</a>
+                            <a href="/room-return" @if(request()->route()->uri == 'room-return') class='active' @endif>Room Return</a>
                             <a href="/logout">Logout</a>
                         @else
-                            <a href="/profile">Profile</a>
+                            <a href="/profile" @if(request()->route()->uri == 'profile') class='active' @endif>Profile</a>
                             <a href="/logout">Logout</a>
                         @endif
                       @else
