@@ -40,6 +40,7 @@ Route::middleware('auth')->group(function() {
     Route::get('rooms', [RoomController::class, 'index']);
 
     Route::get('categories', [CategoryController::class, 'index']);
+    Route::get('category-add', [CategoryController::class, 'add']);
 
     Route::get('users', [UserController::class, 'index']);
 
