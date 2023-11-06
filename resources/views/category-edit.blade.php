@@ -1,14 +1,14 @@
 @extends('layouts.mainlayout')
 
-@section('title', ' Add Category')
-
+@section('title', 'Edit Category')
+    
 @section('content')
-
-    <h1>Add Category List</h1>
+ 
+    <h1>Edit Category</h1>
 
     <div class="mt-5 w-50">
 
-        @if ($errors->any())
+                @if ($errors->any())
             <div class="alert alert-danger">
                 <ul>
                     @foreach ($errors->all() as $error)
@@ -18,15 +18,16 @@
             </div>
         @endif
 
-        <form action="category-add" method="post">
+        <form action="/category-edit/{{$category->slug}}" method="post">
             @csrf
+            @method('put')
             <div>
                 <label for="name" class="form-label">Name</label>
-                <input type="text" name="name" id="name" class="form-control" placeholder="Category Name">
+                <input type="text" name="name" id="name" class="form-control" value="{{$category->name}}" placeholder="Category Name">
             </div>
 
             <div class="mt-3">
-                <button class="btn btn-success me-3" type="submit">Save</button>
+                <button class="btn btn-success me-3" type="submit">Edit</button>
                 <a href="/categories" class="btn btn-danger">Cancel</a>
             </div>
         </form>

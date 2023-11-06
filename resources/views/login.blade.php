@@ -64,7 +64,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Login</title>
 </head>
@@ -85,12 +85,18 @@
 
             <div class="col-md-6 right">
 
+                @if (session('status'))
+                    <div class="alert alert-danger">
+                        {{ session('message') }}
+                    </div>
+                @endif
+
                 <div class="input-box">
 
-                   <header>Create account</header>
+                   <header>Login</header>
                    <div class="input-field">
-                        <input type="text" class="input" id="email" required="" autocomplete="off">
-                        <label for="email">Email</label>
+                        <input type="text" class="input" id="username" required="" autocomplete="off">
+                        <label for="username">Username</label>
                     </div>
                    <div class="input-field">
                         <input type="password" class="input" id="pass" required="">
@@ -101,7 +107,7 @@
                         <input type="submit" class="submit" value="Sign Up">
                    </div>
                    <div class="signin">
-                    <span>Already have an account? <a href="#">Log in here</a></span>
+                    <span> Don't Have Account? <a href="/register">Sign Up</a></span>
                    </div>
                 </div>
             </div>
