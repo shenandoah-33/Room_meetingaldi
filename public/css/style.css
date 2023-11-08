@@ -67,6 +67,10 @@
 
 .wrapper {
     background-image: url("../../image/Gedung-KPU-Vector.jpg");
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .main {
     display: flex;
