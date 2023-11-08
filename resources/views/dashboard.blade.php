@@ -10,7 +10,7 @@
 
     <div class="row mt-5">
         <div class="col-lg-4">
-            <div class="card-data book">
+            <div class="card-data room">
                 <div class="row">
                     <div class="col-6"><i class="bi bi-door-open"></i></div>
                     <div class="col-6 d-flex flex-column justify-content-center align-items-end">
