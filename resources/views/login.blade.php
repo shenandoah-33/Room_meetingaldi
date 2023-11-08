@@ -87,6 +87,12 @@
             <div class="col-md-6 right">
                 <div class="input-box">
 
+                            @if (session('status'))
+                                <div class="alert alert-danger">
+                                    {{ session('message') }}
+                                </div>
+                            @endif
+
                    <header>LOGIN</header>
                    <form action="/login" method="post">
                     @csrf
