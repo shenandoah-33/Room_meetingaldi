@@ -38,6 +38,8 @@ Route::middleware('auth')->group(function() {
     Route::get('profile', [UserController::class, 'profile'])->middleware(['auth', 'only_client']);
 
     Route::get('rooms', [RoomController::class, 'index']);
+    Route::get('room-add', [RoomController::class, 'add']);
+    Route::post('room-add', [RoomController::class, 'store']);
 
     Route::get('categories', [CategoryController::class, 'index']);
     Route::get('category-add', [CategoryController::class, 'add']);
