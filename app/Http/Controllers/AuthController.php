@@ -16,15 +16,18 @@ class AuthController extends Controller
 
     public function register()
     {
-        return view('register');   
+        return view('register');
     }
 
     public function authenticating(Request $request)
     {
+
+
         $credentials = $request->validate([
             'username' => ['required'],
             'password' => ['required'],
         ]);
+
 
         // cek apakah login valid/benar
         if (Auth::attempt($credentials)) {

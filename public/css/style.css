@@ -58,7 +58,8 @@
 /* CARD DATA DASHBOARD */
 
 /* CSS LOGIN */
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+/*
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 *{
     font-family: 'Poppins', sans-serif;
@@ -74,7 +75,7 @@
     min-height: 100vh;
 }
 .side-image{
-    background-image: url("images/Meeting-Room-960x768.jpg");
+    background-image: url("../../image/gambar1.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -89,20 +90,7 @@
   padding: 0px;
   box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.2);
 }
-.text{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.text p{
-    color: #fff;
-    font-size: 20px;
-}
-i{
-    font-weight: 400;
-    font-size: 15px;
-}
+
 .right{
   display: flex;
   justify-content: center;
@@ -114,7 +102,7 @@ i{
   box-sizing: border-box;
 }
 img{
-    width: 35px;
+    width: 70px;
     position: absolute;
     top: 30px;
     left: 30px;
@@ -191,7 +179,7 @@ span a:hover{
 
 @media only screen and (max-width: 768px){
     .side-image{
-        border-radius: 10px 10px 0 0;
+        border-radius: 20px 20px 0 0;
     }
     img{
         width: 35px;
@@ -201,7 +189,7 @@ span a:hover{
     }
     .text{
         position: absolute;
-        top: 70%;
+        top: 10%;
         text-align: center;
     }
     .text p, i{
@@ -211,5 +199,5 @@ span a:hover{
         max-width:420px;
         width: 100%;
     }
-} */
+}*\
 /* CSS LOGIN */
