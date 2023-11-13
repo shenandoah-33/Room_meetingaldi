@@ -29,7 +29,11 @@
                         @if (Auth::user()->role_id == 1)
                             <a href="/dashboard" @if(request()->route()->uri == 'dashboard') class='active' @endif>Dashboard</a>
                             <a href="/users" @if(request()->route()->uri == 'users') class='active' @endif>Users</a>
-                            <a href="/rooms" @if(request()->route()->uri == 'rooms') class='active' @endif>Rooms</a>
+                            <a href="/rooms" @if(request()->route()->uri == 'rooms' || 
+                              request()->route()->uri == 'room-add' || 
+                              request()->route()->uri == 'room-delete/{slug}' || 
+                              request()->route()->uri == 'room-edit/{slug}' || 
+                              request()->route()->uri == 'room-deleted') class='active' @endif>Rooms</a>
                             <a href="/categories" @if(request()->route()->uri == 'categories' || 
                               request()->route()->uri == 'category-add' || 
                               request()->route()->uri == 'category-delete/{slug}' || 
