@@ -66,7 +66,7 @@
                 </div>
                 <div>
                     <label for="biro" class="form-label text-light">Biro</label>
-                    <textarea name="biro" id="biro" class="form-control" required></textarea>
+                    <textarea name="biro" id="biro" class="form-control" style="resize: none" required></textarea>
                 </div>
                 <div>
                     <button type="submit" class="btn btn-primary form-control">Register</button>
