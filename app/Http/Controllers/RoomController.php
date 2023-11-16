@@ -93,4 +93,21 @@ class RoomController extends Controller
         return redirect('rooms')->with('status', 'Restore Room Success');
     }
 
+    public function list(Request $request)
+    {
+        $categories = Category::all();
+
+        if ($request->category || $request->title) {
+            $rooms = Room::where('title', 'like', '%'.$request->title.'%')
+                        ->orWhereHas('categories', function($q) use($request) {
+                            $q->where('categories.id', $request->category);
+                        })
+                        ->get();
+        }
+        else {
+            $rooms = Room::all();
+        }
+
+        return view('room-list', ['rooms' => $rooms, 'categories'=>$categories]);
+    }
 }
