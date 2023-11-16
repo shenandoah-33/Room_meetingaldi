@@ -34,14 +34,17 @@
 
 .card-data.room {
     background-color: crimson;
+    border-radius: 30px;
 }
 
 .card-data.category {
     background-color: rgb(255, 0, 191);
+    border-radius: 30px;
 }
 
 .card-data.user {
     background-color: rgb(153, 0, 241);
+    border-radius: 30px;
 }
 
 .card-data i {

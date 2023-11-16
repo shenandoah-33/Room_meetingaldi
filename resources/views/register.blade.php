@@ -19,6 +19,7 @@
                 <div class="fw-bold text-center" style="margin-top:115px; ">
                     <p class="text-light">KOMISI PEMILIHAN UMUM REPUBLIK INDONESIA</p>
                 </div>
+<<<<<<< HEAD
 
             </div>
 
@@ -57,6 +58,33 @@
                    <div class="signin">
                     <span> Have Account? <a href="login">Login</a></span>
                    </div>
+=======
+            @endif
+        <div class="register-box">
+            <form action="" method="post">
+                @csrf
+                <div>
+                    <label for="username" class="form-label text-light">Username</label>
+                    <input type="text" name="username" id="username" class="form-control">
+                </div>
+                <div>
+                    <label for="password" class="form-label text-light">Password</label>
+                    <input type="password" name="password" id="password" class="form-control" required>
+                </div>
+                <div>
+                    <label for="phone" class="form-label text-light">Phone</label>
+                    <input type="text" name="phone" id="phone" class="form-control">
+                </div>
+                <div>
+                    <label for="biro" class="form-label text-light">Biro</label>
+                    <textarea name="biro" id="biro" class="form-control" style="resize: none" required></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-primary form-control">Register</button>
+                </div>
+                <div class="text-center text-light">
+                    Have Account? <a href="login">Login</a>
+>>>>>>> 72099ea1bc0814cc1acb2e046626cb3bcd1d4e46
                 </div>
             </form>
             </div>
