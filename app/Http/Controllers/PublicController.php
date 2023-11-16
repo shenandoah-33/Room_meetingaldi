@@ -8,6 +8,6 @@ class PublicController extends Controller
 {
     public function index()
     {
-        return view('room-list');
+        return view('index');
     }
 }
