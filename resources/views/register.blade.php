@@ -231,7 +231,7 @@
                         <label for="biro">Biro</label>
                     </div>
                     <div>
-                        <button type="submit" class="btn btn-primary form-control">Login</button>
+                        <button type="submit" class="btn btn-primary form-control">Sign Up</button>
                     </div>
                    <div class="signin">
                     <span> Have Account? <a href="/login">Sign In</a></span>
