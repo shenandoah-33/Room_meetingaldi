@@ -92,17 +92,17 @@
       <div class="container">
         <div class="box">
           <div class="box-famous">
-            <div class="box" data-aos="fade-up">
+            <div class="box" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="100">
               <img src="/img/everest-famous.jpg" alt="" />
               <h1>Everest Mountain</h1>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, nisi. Dolores repellat iusto voluptates consectetur dolore laborum commodi dolorum sit nisi ex nostrum itaque animi, pariatur vero tempora nam maxime.</p>
             </div>
-            <div class="box" data-aos="fade-up">
+            <div class="box" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
               <img src="/img/fuji-famous.jpg" alt="" />
               <h1>Fuji Mountain</h1>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, nisi. Dolores repellat iusto voluptates consectetur dolore laborum commodi dolorum sit nisi ex nostrum itaque animi, pariatur vero tempora nam maxime.</p>
             </div>
-            <div class="box" data-aos="fade-up">
+            <div class="box" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="300">
               <img src="/img/k2-famous.jpg" alt="" />
               <h1>K2 Mountain</h1>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, nisi. Dolores repellat iusto voluptates consectetur dolore laborum commodi dolorum sit nisi ex nostrum itaque animi, pariatur vero tempora nam maxime.</p>
