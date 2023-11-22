@@ -1,5 +1,5 @@
 /* CSS INDEX */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -98,7 +98,11 @@ header .hero h1 {
     height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(109.6deg, rgb(14, 11, 56) 11.2%, rgb(239, 37, 37) 91.1%);
+    background: linear-gradient(
+        109.6deg,
+        rgb(14, 11, 56) 11.2%,
+        rgb(239, 37, 37) 91.1%
+    );
 }
 
 .about .box-about {
@@ -140,7 +144,11 @@ header .hero h1 {
     height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(109.6deg, rgb(6, 2, 2) 32.4%, rgb(137, 30, 47) 98.8%);
+    background: linear-gradient(
+        109.6deg,
+        rgb(6, 2, 2) 32.4%,
+        rgb(137, 30, 47) 98.8%
+    );
 }
 
 .famous .box-famous {
@@ -166,11 +174,11 @@ header .hero h1 {
     margin-bottom: 10px;
 }
 
-.famous .box-famous h1{
+.famous .box-famous h1 {
     font-weight: 900;
 }
 
-.famous .box-famous p{
+.famous .box-famous p {
     font-weight: 600;
 }
 
@@ -180,7 +188,11 @@ header .hero h1 {
     height: 100vh;
     display: flex;
     align-items: center;
-    background: radial-gradient(circle at 10% 20%, rgb(255, 19, 120) 0%, rgb(0, 0, 0) 90.5%);
+    background: radial-gradient(
+        circle at 10% 20%,
+        rgb(255, 19, 120) 0%,
+        rgb(0, 0, 0) 90.5%
+    );
 }
 
 .gallery .box-gallery {
@@ -242,7 +254,7 @@ header .hero h1 {
 
 /* footer */
 footer {
-    background: rgb(0, 0, 0);
+    background-color: black;
 }
 
 footer p {
