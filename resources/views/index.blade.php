@@ -1,17 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{asset('css/style.index.css')}}" />
     <!-- Fonts google poppins-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <title>HOME</title>
   </head>
   <body>
@@ -19,40 +19,40 @@
       <!-- NAVIGATION BAR-->
       <section class="navigation fixed-top" id="home">
         <div class="container">
-          <div class="box-navigation">
-            <div class="box">
-              <h1 class="animate_animated animate_shakeY">LOGO</h1>
+          <div class="box-navigation animate__animated animate__bounce animate__fadeInDown">
+            <div class="animate__animated animate__lightSpeedInRight animate__zoomIn">
+              <img src="img/logo-kpu.png" width="65px">
             </div>
-            <div class="box menu-navigation animate_animated animate_slideInUp">
+            <div class="box menu-navigation">
               <ul>
-                <li class="btn btn-info">
-                  <i class="ri-home-3-line"></i>
+                <li class="btn btn-danger">
+                  <i class="ri-login-box-fill"></i>
                   <a href="/login">Login</a>
                 </li>
-                <li class="btn btn-outline-primary">
-                  <i class="ri-beranda-line"></i>
+                <li class="btn">
+                  <i class="ri-home-8-fill"></i>
                   <a href="#beranda">Home</a>
                 </li>
-                <li class="btn btn-outline-primary">
-                  <i class="ri-information-line"></i>
+                <li class="btn">
+                  <i class="ri-information-fill"></i>
                   <a href="#about">About</a>
                 </li>
-                <li class="btn btn-outline-primary">
-                  <i class="ri-famous-line"></i>
+                <li class="btn">
+                  <i class="ri-bookmark-fill"></i>
                   <a href="#famous">Famous</a>
                 </li>
-                <li class="btn btn-outline-primary">
-                  <i class="ri-gallery-line"></i>
+                <li class="btn">
+                  <i class="ri-gallery-fill"></i>
                   <a href="#gallery">Gallery</a>
                 </li>
-                <li class="btn btn-outline-primary">
+                <!--<li class="btn btn-outline-transparant">
                   <i class="ri-contacts-line"></i>
                   <a href="#contact">Contact</a>
-                </li>
+                </li> -->
               </ul>
             </div>
             <div class="box menu-bar">
-              <i class="ri-menu-3-fill" style="color: white"></i>
+              <i class="ri-menu-fill" style="color: rgb(255, 255, 255)"></i>
             </div>
           </div>
         </div>
@@ -61,7 +61,9 @@
 
       <!-- Hero -->
       <section class="hero" id="hero">
-        <h1 class="animate_animated animatebackInDown animate_flipInX">KOMISI PEMILIHAN UMUM REPUBLIK INDONESIA</h1>
+          <div class="animate__animated animate__jackInTheBox">
+          <h1 >KOMISI PEMILIHAN UMUM REPUBLIK INDONESIA</h1>
+          </div>
       </section>
       <!-- Hero -->
     </header>
@@ -126,7 +128,7 @@
     </section>
     <!-- gallery -->
 
-    <!-- contact -->
+    <!-- contact
     <section class="contact" id="contact">
       <div class="container">
         <div class="box-contact">
@@ -150,16 +152,16 @@
         </div>
       </div>
     </section>
-    <!-- contact -->
+    contact -->
 
     <!-- footer -->
     <footer>
       <p>&copy; 2024 PRABOWO MALAS MALAS MALAS</p>
     </footer>
     <!-- footer -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="./public/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>    <script src="js/scipt.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/script.js"></script>
     <script>
       AOS.init();
     </script>

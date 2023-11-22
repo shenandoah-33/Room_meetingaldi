@@ -1,15 +1,15 @@
 /* CSS INDEX */
-
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: "Poppins", sans-serif;
+    font-weight: 600;
 }
 
 .container {
-    width: 90%;
+    width: 100%;
     margin-inline: auto;
 }
 
@@ -37,7 +37,8 @@ header {
 }
 
 .navigation .box-navigation .box:nth-child(1) h1 {
-    font-size: 38px;
+    font-size: 40px;
+    font-weight: 900;
     color: white;
 }
 
@@ -47,13 +48,12 @@ header {
 }
 
 .navigation .box-navigation .box:nth-child(2) ul li {
-    list-style-type: none;
     margin-left: 40px;
 }
 
 .navigation .box-navigation .box:nth-child(2) ul li a {
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
     transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
@@ -62,7 +62,7 @@ header {
 }
 
 .navigation .box-navigation .box:nth-child(2) ul li a:hover {
-    color: greenyellow;
+    color: rgb(0, 213, 255);
 }
 
 .navigation .box-navigation .box:nth-child(3) {
@@ -89,6 +89,7 @@ header .hero h1 {
     color: white;
     font-size: 50px;
     text-align: center;
+    font-weight: 900;
 }
 
 /* about style */
@@ -97,7 +98,7 @@ header .hero h1 {
     height: 100vh;
     display: flex;
     align-items: center;
-    background-color: #700058;
+    background: linear-gradient(109.6deg, rgb(14, 11, 56) 11.2%, rgb(239, 37, 37) 91.1%);
 }
 
 .about .box-about {
@@ -115,11 +116,13 @@ header .hero h1 {
 .about .box-about .box:nth-child(1) h1 {
     font-size: 42px;
     color: aqua;
+    font-weight: 900;
 }
 
 .about .box-about .box:nth-child(1) p {
     line-height: 2;
     color: rgb(255, 255, 255);
+    font-weight: bold;
 }
 
 .about .box-about .box:nth-child(2) img {
@@ -137,7 +140,7 @@ header .hero h1 {
     height: 100vh;
     display: flex;
     align-items: center;
-    background-color: #2b2d42;
+    background: linear-gradient(109.6deg, rgb(6, 2, 2) 32.4%, rgb(137, 30, 47) 98.8%);
 }
 
 .famous .box-famous {
@@ -163,13 +166,21 @@ header .hero h1 {
     margin-bottom: 10px;
 }
 
+.famous .box-famous h1{
+    font-weight: 900;
+}
+
+.famous .box-famous p{
+    font-weight: 600;
+}
+
 /* gallery style */
 .gallery {
     width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
-    background-color: darkred;
+    background: radial-gradient(circle at 10% 20%, rgb(255, 19, 120) 0%, rgb(0, 0, 0) 90.5%);
 }
 
 .gallery .box-gallery {
@@ -185,14 +196,14 @@ header .hero h1 {
     margin: 10px;
 }
 
-/* contact style */
+/* contact style
 .contact {
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #2b2d42;
+    background-color: #113f67;
 }
 
 .contact .box-contact {
@@ -231,7 +242,7 @@ header .hero h1 {
 
 /* footer */
 footer {
-    background-color: black;
+    background: rgb(0, 0, 0);
 }
 
 footer p {
@@ -287,6 +298,7 @@ footer p {
     .navigation .box-navigation .box:nth-child(2) ul li i {
         margin-inline: 10px;
         font-size: 24px;
+        font-weight: 400;
         display: inline-block;
     }
 
@@ -301,6 +313,7 @@ footer p {
 
     .navigation .box-navigation .box:nth-child(3) i {
         font-size: 28px;
+        font-weight: 300;
     }
 
     header .hero h1 {
@@ -421,7 +434,7 @@ footer p {
     }
 
     .navigation .box-navigation .menu-navigation.menu-active {
-        right: 30px;
+        right: 80px;
     }
 
     .about .box-about .box:nth-child(1) h1 {

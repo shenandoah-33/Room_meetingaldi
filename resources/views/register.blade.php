@@ -137,15 +137,15 @@
                         <label for="username">Username</label>
                     </div>
                    <div class="input-field">
-                        <input type="password" class="input" id="pass" required="" name="password">
+                        <input type="password" class="input" id="pass" required="" autocomplete="off" name="password">
                         <label for="pass">Password</label>
                     </div>
                     <div class="input-field">
-                        <input type="phone" class="input" id="phone" required="" name="phone">
+                        <input type="phone" class="input" id="phone" required="" autocomplete="off" name="phone">
                         <label for="phone">Phone</label>
                     </div>
                     <div class="input-field">
-                        <input type="biro" class="input" id="biro" required="" name="biro">
+                        <input type="biro" class="input" id="biro" required=""  autocomplete="off" name="biro">
                         <label for="biro">Biro</label>
                     </div>
                     <div>
