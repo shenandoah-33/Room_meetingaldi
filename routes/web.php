@@ -8,6 +8,7 @@ use App\Http\Controllers\PublicController;
 use App\Http\Controllers\BookingController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\RoomBookingController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,6 +22,7 @@ use App\Http\Controllers\DashboardController;
 */
 
 Route::get('/', [PublicController::class, 'index']);
+Route::get('room-list', [RoomController::class, 'list']);
 
 Route::middleware('only_guest')->group(function() {
     Route::get('login', [AuthController::class, 'login'])->name('login');
@@ -32,6 +34,8 @@ Route::middleware('only_guest')->group(function() {
 Route::middleware('auth')->group(function() {
     Route::get('logout', [AuthController::class, 'logout']);
     Route::get('profile', [UserController::class, 'profile'])->middleware(['auth', 'only_client']);
+    Route::get('room-booking', [RoomBookingController::class, 'index']);
+    Route::post('room-booking', [RoomBookingController::class, 'store']);
 
     Route::middleware('only_admin')->group(function() {
         Route::get('dashboard', [DashboardController::class, 'index']);
@@ -45,7 +49,6 @@ Route::middleware('auth')->group(function() {
         Route::get('room-destroy/{slug}', [RoomController::class, 'destroy']);
         Route::get('room-deleted', [RoomController::class, 'deletedRoom']);
         Route::get('room-restore/{slug}', [RoomController::class, 'restore']);
-        Route::get('room-list', [RoomController::class, 'list']);
 
         Route::get('categories', [CategoryController::class, 'index']);
         Route::get('category-add', [CategoryController::class, 'add']);
