@@ -46,11 +46,12 @@
                               request()->route()->uri == 'category-deleted') class='active' @endif>Categories</a>
                             <a href="/room-list" @if(request()->route()->uri == 'room-list') class='active' @endif>Room List</a>
                             <a href="/booking" @if(request()->route()->uri == 'booking') class='active' @endif>Booking</a>
-                            <a href="/room-booking" @if(request()->route()->uri == 'room-booking') class='active' @endif>Room Booking</a>
                             <a href="/room-return" @if(request()->route()->uri == 'room-return') class='active' @endif>Room Return</a>
                             <a href="/logout">Logout</a>
                         @else
                             <a href="/profile" @if(request()->route()->uri == 'profile') class='active' @endif>Profile</a>
+                            <a href="/room-list" @if(request()->route()->uri == 'room-list') class='active' @endif>Room List</a>
+                            <a href="/room-booking" @if(request()->route()->uri == 'room-booking') class='active' @endif>Room Booking</a>
                             <a href="/logout">Logout</a>
                         @endif
                       @else
