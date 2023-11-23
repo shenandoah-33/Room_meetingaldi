@@ -45,26 +45,7 @@
     </div>
 
     <div class="mt-5">
-        <h2>#Booking</h2>
-
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>No.</th>
-                    <th>User</th>
-                    <th>Room Name</th>
-                    <th>Booking Time</th>
-                    <th>Return Time</th>
-                    <th>Status</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td colspan="7" style="text-align: center">
-                        No Data
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <h1>Booking</h1>
+        <x-booking-table :booking='$booking' />
     </div>
 @endsection

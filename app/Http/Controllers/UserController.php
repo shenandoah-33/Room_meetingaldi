@@ -3,13 +3,16 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Models\Booking;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
     public function profile()
     {
-        return view('profile');
+        $booking = Booking::with(['user', 'room'])->where('user_id', Auth::user()->id)->get();
+        return view('profile', ['booking' => $booking]);
     }
 
     public function index()
@@ -27,7 +30,8 @@ class UserController extends Controller
     public function show($slug)
     {
         $user = User::where('slug', $slug)->first();
-        return view('user-detail', ['user' => $user]); 
+        $booking = Booking::with(['user', 'room',])->where('user_id', $user->id)->get();
+        return view('user-detail', ['user' => $user, 'booking' => $booking]); 
     }
 
     public function approve($slug)

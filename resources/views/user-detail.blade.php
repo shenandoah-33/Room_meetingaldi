@@ -39,4 +39,9 @@
             <input type="text" class="form-control" readonly value="{{$user->status}}">
        </div>
     </div>
+
+    <div class="mt-5">
+        <h1>User's Booking</h1>
+        <x-booking-table :booking='$booking' />
+    </div>
 @endsection

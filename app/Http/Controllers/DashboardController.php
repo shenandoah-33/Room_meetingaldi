@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Room;
 use App\Models\User;
+use App\Models\Booking;
 use App\Models\Category;
 use Illuminate\Http\Request;
 
@@ -14,6 +15,7 @@ class DashboardController extends Controller
         $roomCount = Room::count();
         $categoryCount = Category::count();
         $userCount = User::count();
-        return view('dashboard', ['room_count' => $roomCount, 'category_count' => $categoryCount, 'user_count' => $userCount]);
+        $booking = Booking::with(['user', 'room',])->get();
+        return view('dashboard', ['room_count' => $roomCount, 'category_count' => $categoryCount, 'user_count' => $userCount, 'booking' => $booking]);
     }
 }
