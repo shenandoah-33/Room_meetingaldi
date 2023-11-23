@@ -17,6 +17,18 @@
                     <th>Actual Return Time</th>
                 </tr>
             </thead>
+            <tbody>
+                @foreach ($booking as $item)
+                    <tr>
+                        <td>{{ $loop->iteration }}</td>
+                        <td>{{ $item->user->username }}</td>
+                        <td>{{ $item->room->room_name }}</td>
+                        <td>{{ $item->booking_time }}</td>
+                        <td>{{ $item->return_time }}</td>
+                        <td>{{ $item->actual_return_time }}</td>
+                    </tr>
+                @endforeach
+            </tbody>
         </table>
     </div>
 @endsection
