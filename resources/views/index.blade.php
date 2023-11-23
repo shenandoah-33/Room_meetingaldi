@@ -117,12 +117,12 @@
     <section class="gallery" id="gallery">
       <div class="container">
         <div class="box-gallery">
-          <img src="/img/1.JPG" alt="" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100" />
-          <img src="/img/2.JPG" alt="" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300" />
-          <img src="/img/3.JPG" alt="" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500" />
-          <img src="/img/4.JPG" alt="" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="700" />
-          <img src="/img/5.JPG" alt="" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="900" />
-          <img src="/img/6.jpg" alt="" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1100" />
+          <img src="/img/G1.JPG" alt="" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100" />
+          <img src="/img/G2.JPG" alt="" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300" />
+          <img src="/img/G3.JPG" alt="" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500" />
+          <img src="/img/G4.JPG" alt="" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="700" />
+          <img src="/img/G5.JPG" alt="" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="900" />
+          <img src="/img/G6.jpg" alt="" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1100" />
         </div>
       </div>
     </section>
