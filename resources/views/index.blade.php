@@ -23,7 +23,7 @@
             <div class="animate__animated animate__lightSpeedInRight animate__zoomIn">
               <img src="img/logo-kpu.png" width="65px">
             </div>
-            <div class="box menu-navigation">
+            <div class="box menu-navigation text-center">
               <ul>
                 <li class="btn btn-danger">
                   <i class="ri-login-box-fill"></i>
@@ -73,14 +73,14 @@
       <div class="container">
         <div class="box-about">
           <div class="box" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="150">
-            <h1>Mountainer</h1>
+            <h1>RUANG SIDANG UTAMA KPU RI</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit debitis dolor ratione adipisci eius consequatur magni, eaque culpa dolorum recusandae voluptates dolorem dolore similique tempora alias consectetur nulla facere
               repellendus?
             </p>
           </div>
           <div class="box" data-aos="fade-left" data-aos-duration="1800" data-aos-delay="200">
-            <img src="/img/1.jpg" alt="" />
+            <img src="/img/SIDANG.JPG" alt="" />
           </div>
         </div>
       </div>
@@ -93,18 +93,18 @@
         <div class="box">
           <div class="box-famous">
             <div class="box" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="100">
-              <img src="/img/everest-famous.jpg" alt="" />
-              <h1>Everest Mountain</h1>
+              <img src="/img/RAPAT1.JPG" alt="" />
+              <h1>RUANG RAPAT RAFLESIA</h1>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, nisi. Dolores repellat iusto voluptates consectetur dolore laborum commodi dolorum sit nisi ex nostrum itaque animi, pariatur vero tempora nam maxime.</p>
             </div>
             <div class="box" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
-              <img src="/img/fuji-famous.jpg" alt="" />
-              <h1>Fuji Mountain</h1>
+              <img src="/img/RAPAT3.JPG" alt="" />
+              <h1>RUANG RAPAT LANTAI 1</h1>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, nisi. Dolores repellat iusto voluptates consectetur dolore laborum commodi dolorum sit nisi ex nostrum itaque animi, pariatur vero tempora nam maxime.</p>
             </div>
             <div class="box" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="300">
-              <img src="/img/k2-famous.jpg" alt="" />
-              <h1>K2 Mountain</h1>
+              <img src="/img/RAPAT2.JPG" alt="" />
+              <h1>RUANG RAPAT LANTAI 3</h1>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, nisi. Dolores repellat iusto voluptates consectetur dolore laborum commodi dolorum sit nisi ex nostrum itaque animi, pariatur vero tempora nam maxime.</p>
             </div>
           </div>
@@ -117,11 +117,11 @@
     <section class="gallery" id="gallery">
       <div class="container">
         <div class="box-gallery">
-          <img src="/img/1.jpg" alt="" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100" />
-          <img src="/img/2.jpg" alt="" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300" />
-          <img src="/img/3.jpg" alt="" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500" />
-          <img src="/img/4.jpg" alt="" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="700" />
-          <img src="/img/5.jpg" alt="" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="900" />
+          <img src="/img/1.JPG" alt="" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100" />
+          <img src="/img/2.JPG" alt="" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300" />
+          <img src="/img/3.JPG" alt="" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500" />
+          <img src="/img/4.JPG" alt="" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="700" />
+          <img src="/img/5.JPG" alt="" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="900" />
           <img src="/img/6.jpg" alt="" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1100" />
         </div>
       </div>
@@ -157,7 +157,7 @@
     <!-- footer -->
     <body>
     <footer>
-      <p>&copy; 2024 PRABOWO MALAS MALAS MALAS</p>
+      <p>&copy; KOMISI PEMILIHAN UMUM REPUBLIK INDONESIA</p>
     </footer>
     </body>
     <!-- footer -->

@@ -78,7 +78,7 @@
 
                 <img src="img/logo-kpu.png" alt="">
                 <div class="fw-bold text-center" style="margin-top:115px; ">
-                    <p class="text-light">KOMISI PEMILIHAN UMUM REPUBLIK INDONESIA</p>
+                    <p class="text-dark">KOMISI PEMILIHAN UMUM REPUBLIK INDONESIA</p>
                 </div>
 
             </div>
