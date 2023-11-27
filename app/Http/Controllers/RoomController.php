@@ -97,8 +97,8 @@ class RoomController extends Controller
     {
         $categories = Category::all();
 
-        if ($request->category || $request->title) {
-            $rooms = Room::where('title', 'like', '%'.$request->title.'%')
+        if ($request->category || $request->room_name) {
+            $rooms = Room::where('room_name', 'like', '%'.$request->room_name.'%')
                         ->orWhereHas('categories', function($q) use($request) {
                             $q->where('categories.id', $request->category);
                         })

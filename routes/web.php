@@ -70,5 +70,8 @@ Route::middleware('auth')->group(function() {
         Route::get('user-restore/{slug}', [UserController::class, 'restore']);
 
         Route::get('booking', [BookingController::class, 'index']);
+
+        Route::get('room-return', [RoomBookingController::class, 'returnRoom']);
+        Route::post('room-return', [RoomBookingController::class, 'saveReturnRoom']);
     });
 });
