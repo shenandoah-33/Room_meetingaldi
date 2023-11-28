@@ -75,10 +75,6 @@
         <div class="box-about">
           <div class="box" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="150">
             <h1>RUANG SIDANG UTAMA KPU RI</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit debitis dolor ratione adipisci eius consequatur magni, eaque culpa dolorum recusandae voluptates dolorem dolore similique tempora alias consectetur nulla facere
-              repellendus?
-            </p>
           </div>
           <div class="box" data-aos="fade-left" data-aos-duration="1800" data-aos-delay="200">
             <img src="/img/SIDANG.JPG" alt="" />
@@ -96,17 +92,14 @@
             <div class="box" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="100">
               <img src="/img/RAPAT1.JPG" alt="" />
               <h1>RUANG RAPAT RAFLESIA</h1>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, nisi. Dolores repellat iusto voluptates consectetur dolore laborum commodi dolorum sit nisi ex nostrum itaque animi, pariatur vero tempora nam maxime.</p>
             </div>
             <div class="box" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
               <img src="/img/RAPAT3.JPG" alt="" />
               <h1>RUANG RAPAT LANTAI 1</h1>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, nisi. Dolores repellat iusto voluptates consectetur dolore laborum commodi dolorum sit nisi ex nostrum itaque animi, pariatur vero tempora nam maxime.</p>
             </div>
             <div class="box" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="300">
               <img src="/img/RAPAT2.JPG" alt="" />
               <h1>RUANG RAPAT LANTAI 3</h1>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, nisi. Dolores repellat iusto voluptates consectetur dolore laborum commodi dolorum sit nisi ex nostrum itaque animi, pariatur vero tempora nam maxime.</p>
             </div>
           </div>
         </div>
