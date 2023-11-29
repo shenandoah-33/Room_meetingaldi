@@ -10,7 +10,7 @@
 
     <div class="row mt-5">
         <div class="col-lg-4">
-            <div class="card-data room">
+            <div class="card-data">
                 <div class="row">
                     <div class="col-6"><i class="bi bi-door-open"></i></div>
                     <div class="col-6 d-flex flex-column justify-content-center align-items-end">
@@ -21,7 +21,7 @@
             </div>
         </div>
         <div class="col-lg-4">
-            <div class="card-data category">
+            <div class="card-data">
                 <div class="row">
                     <div class="col-6"><i class="bi bi-list-ol"></i></div>
                     <div class="col-6 d-flex flex-column justify-content-center align-items-end">
@@ -32,7 +32,7 @@
             </div>
         </div>
         <div class="col-lg-4">
-            <div class="card-data user">
+            <div class="card-data">
                 <div class="row">
                     <div class="col-6"><i class="bi bi-people"></i></div>
                     <div class="col-6 d-flex flex-column justify-content-center align-items-end">
