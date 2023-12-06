@@ -19,6 +19,7 @@
                     <th>Username</th>
                     <th>Phone</th>
                     <th>Biro</th>
+                    <th>Agenda</th>
                     <th>Action</th>
                 </tr>
             </thead>
@@ -35,6 +36,7 @@
                         @endif
                     </td>
                     <td>{{ $item->biro }}</td>
+                    <td>{{ $item->agenda }}</td>
                     <td>
                         <a href="/user-detail/{{$item->slug}}" class="btn btn-success">Detail</a>
                     </td>
