@@ -5,6 +5,8 @@
                 <th>No.</th>
                 <th>User</th>
                 <th>Room</th>
+                <th>Biro</th>
+                <th>Agenda</th>
                 <th>Booking Time</th>
                 <th>Return Time</th>
                 <th>Actual Return Time</th>
@@ -17,6 +19,8 @@
                     <td>{{ $loop->iteration }}</td>
                     <td>{{ $item->user->username }}</td>
                     <td>{{ $item->room->room_name }}</td>
+                    <td>{{ $item->user->biro }}</td>
+                    <td>{{ $item->user->agenda }}</td>
                     <td>{{ $item->booking_time }}</td>
                     <td>{{ $item->return_time }}</td>
                     <td>{{ $item->actual_return_time }}</td>

@@ -32,7 +32,11 @@
        </div>
        <div class="mb-3">
         <label for="" class="form-label">Biro</label>
-            <textarea name="" id="" cols="30" rows="7" class="form-control" style="resize: none">{{ $user->biro }}</textarea>
+            <textarea name="" id="" cols="30" rows="2" class="form-control" style="resize: none">{{ $user->biro }}</textarea>
+       </div>
+       <div class="mb-3">
+        <label for="" class="form-label">Agenda</label>
+            <textarea name="" id="" cols="30" rows="7" class="form-control" style="resize: none">{{ $user->agenda }}</textarea>
        </div>
        <div class="mb-3">
         <label for="" class="form-label">Status</label>

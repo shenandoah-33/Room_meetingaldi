@@ -149,6 +149,10 @@
                         <input type="biro" class="input" id="biro" required=""  autocomplete="off" name="biro">
                         <label for="biro">Biro</label>
                     </div>
+                    <div class="input-field">
+                        <input type="agenda" class="input" id="agenda" required=""  autocomplete="off" name="agenda">
+                        <label for="agenda">Agenda</label>
+                    </div>
                     <div>
                         <button type="submit" class="btn btn-primary form-control">Sign Up</button>
                     </div>
