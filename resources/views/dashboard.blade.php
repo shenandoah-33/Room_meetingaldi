@@ -3,10 +3,12 @@
 @section('title', 'Dashboard')
 
 @section('page-name', 'dashboard')
-    
+
 @section('content')
 
     <h1>Welcome, {{Auth::user()->username}}</h1>
+
+    <link rel="icon" href="img/logo-kpu.png" type="image/x-icon">
 
     <div class="row mt-5">
         <div class="col-lg-4">
