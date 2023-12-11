@@ -6,7 +6,7 @@
 
 @section('content')
 
-    <h1>Welcome, {{Auth::user()->username}}</h1>
+    <h1>Welcome To Booking Room Meeting KPU, {{Auth::user()->username}}</h1>
 
     <link rel="icon" href="img/logo-kpu.png" type="image/x-icon">
 
