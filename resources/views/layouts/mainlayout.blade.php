@@ -23,7 +23,7 @@
               <div class="sidebar col-lg-2 collapse fw-bold d-lg-block" id="navbarTogglerDemo02">
                 <div class="logo fw-bold text-center">
                   <img src="{{asset('img/logo-kpu.png')}}" alt="gambar" width="45px">
-                  <i>Room<span class="danger">Meeting</span></i>
+                  {{-- <i>Room<span class="danger">Meeting</span></i> --}}
                 </div>
                 @if (Auth::user())
                       @if (Auth::user()->role_id == 1)
