@@ -16,7 +16,7 @@
                 <div class="row">
                     <div class="col-6"><i class="bi bi-door-open"></i></div>
                     <div class="col-6 d-flex flex-column justify-content-center align-items-end">
-                        <div class="card-desc">Rooms</div>
+                        <div class="card-desc">Ruangan</div>
                         <div class="card-count">{{$room_count}}</div>
                     </div>
                 </div>
@@ -27,7 +27,7 @@
                 <div class="row">
                     <div class="col-6"><i class="bi bi-list-ol"></i></div>
                     <div class="col-6 d-flex flex-column justify-content-center align-items-end">
-                        <div class="card-desc">Categories</div>
+                        <div class="card-desc">Kategori</div>
                         <div class="card-count">{{$category_count}}</div>
                     </div>
                 </div>
@@ -38,7 +38,7 @@
                 <div class="row">
                     <div class="col-6"><i class="bi bi-people"></i></div>
                     <div class="col-6 d-flex flex-column justify-content-center align-items-end">
-                        <div class="card-desc">Users</div>
+                        <div class="card-desc">Pengguna</div>
                         <div class="card-count">{{$user_count}}</div>
                     </div>
                 </div>
