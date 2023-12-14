@@ -6,13 +6,9 @@
 
 @section('content')
 
-<<<<<<< HEAD
-    <h1>Selamat Datang, {{Auth::user()->username}}</h1>
-=======
-    <h1>Welcome To Booking Room Meeting KPU, {{Auth::user()->username}}</h1>
+<h1>Selamat Datang, {{Auth::user()->username}}</h1>
 
-    <link rel="icon" href="img/logo-kpu.png" type="image/x-icon">
->>>>>>> ddea8be46fccbcee73272e62e37e86f92c957cac
+<link rel="icon" href="img/logo-kpu.png" type="image/x-icon">
 
     <div class="row mt-5">
         <div class="col-lg-4">
