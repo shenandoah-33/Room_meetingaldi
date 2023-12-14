@@ -37,7 +37,7 @@ class RoomController extends Controller
         $request['cover'] = $newName;
         $room = Room::create($request->all());
         $room->categories()->sync($request->categories);
-        return redirect('rooms')->with('status', 'Room Added Successfully');
+        return redirect('rooms')->with('status', 'Tambah Ruangan Berhasil');
     }
 
     public function edit($slug)
@@ -64,7 +64,7 @@ class RoomController extends Controller
             $room->categories()->sync($request->categories);
         }
 
-        return redirect('rooms')->with('status', 'Edit Room Success');
+        return redirect('rooms')->with('status', 'Edit Ruangan Berhasil');
     }
 
     public function delete($slug)
@@ -77,7 +77,7 @@ class RoomController extends Controller
     {
         $room = Room::where('slug', $slug)->first();
         $room->delete();
-        return redirect('rooms')->with('status', 'Delete Room Success');
+        return redirect('rooms')->with('status', 'Hapus Ruangan Berhasil');
     }
 
     public function deletedRoom()
@@ -90,7 +90,7 @@ class RoomController extends Controller
     {
         $room = Room::withTrashed()->where('slug', $slug)->first();
         $room->restore();
-        return redirect('rooms')->with('status', 'Restore Room Success');
+        return redirect('rooms')->with('status', 'Kembalikan Ruangan Berhasil');
     }
 
     public function list(Request $request)

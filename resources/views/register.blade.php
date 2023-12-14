@@ -92,7 +92,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{asset('css/style.register.css')}}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Register</title>
+    <title>Daftar</title>
     <link rel="icon" href="img/logo-kpu.png" type="image/x-icon">
 </head>
 <body>
@@ -130,7 +130,7 @@
                         </div>
                     @endif
 
-                   <header>REGISTER</header>
+                   <header>DAFTAR</header>
                    <form action="/register" method="post">
                     @csrf
                    <div class="input-field">
@@ -143,7 +143,7 @@
                     </div>
                     <div class="input-field">
                         <input type="phone" class="input" id="phone" required="" autocomplete="off" name="phone">
-                        <label for="phone">Phone</label>
+                        <label for="phone">No. Telp</label>
                     </div>
                     <div class="input-field">
                         <input type="biro" class="input" id="biro" required=""  autocomplete="off" name="biro">
@@ -154,10 +154,10 @@
                         <label for="agenda">Agenda</label>
                     </div>
                     <div>
-                        <button type="submit" class="btn btn-primary form-control">Sign Up</button>
+                        <button type="submit" class="btn btn-primary form-control">Daftar</button>
                     </div>
                    <div class="signin">
-                    <span> Have Account? <a href="/login">Sign In</a></span>
+                    <span> Sudah Punya Akun? <a href="/login">Masuk</a></span>
                    </div>
                 </div>
             </form>

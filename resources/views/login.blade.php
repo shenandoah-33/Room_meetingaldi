@@ -94,7 +94,7 @@
                                 </div>
                             @endif
 
-                   <header>LOGIN</header>
+                   <header>MASUK</header>
                    <form action="/login" method="post">
                     @csrf
                    <div class="input-field">
@@ -106,10 +106,10 @@
                         <label for="pass">Password</label>
                     </div>
                     <div>
-                        <button type="submit" class="btn btn-primary form-control">Login</button>
+                        <button type="submit" class="btn btn-primary form-control">Masuk</button>
                     </div>
                    <div class="signin">
-                    <span> Don't Have Account? <a href="/register">Sign Up</a></span>
+                    <span> Belum Punya Akun? <a href="/register">Daftar</a></span>
                    </div>
                 </div>
             </form>

@@ -38,7 +38,7 @@ class AuthController extends Controller
                 $request->session()->regenerateToken();
 
                 Session::flash('status', 'failed');
-                Session::flash('message', 'Your Account is Not Active! Please Contact Admin!');
+                Session::flash('message', 'Akun Anda Belum Di Setujui Oleh Admin!');
                 return redirect('/login');
             }
 
@@ -54,7 +54,7 @@ class AuthController extends Controller
         }
 
         Session::flash('status', 'failed');
-        Session::flash('message', 'Login Invalid');
+        Session::flash('message', 'Login Gagal!');
         return redirect('/login');
     }
 
@@ -78,7 +78,7 @@ class AuthController extends Controller
         $user = User::create($request->all());
 
         Session::flash('status', 'success');
-        Session::flash('message', 'Register success. Wait admin for approval');
+        Session::flash('message', 'Berhasil Daftar, Tunggu Admin Untuk Menyetujui');
         return redirect('register');
     }
 }

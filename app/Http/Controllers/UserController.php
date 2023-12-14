@@ -40,7 +40,7 @@ class UserController extends Controller
         $user->status = 'active';
         $user->save();
 
-        return redirect('user-detail/'.$slug)->with('status', 'Approve User Success');
+        return redirect('user-detail/'.$slug)->with('status', 'Menyetujui Pengguna Berhasil');
     }
 
     public function delete($slug)
@@ -54,7 +54,7 @@ class UserController extends Controller
         $user = User::where('slug', $slug)->first();
         $user->delete();
 
-        return redirect('users')->with('status', 'Banned User Success');
+        return redirect('users')->with('status', 'Ban Pengguna Berhasil');
     }
 
     public function bannedUser()
@@ -68,6 +68,6 @@ class UserController extends Controller
         $user = User::withTrashed()->where('slug', $slug)->first();
         $user->restore();
 
-        return redirect('users')->with('status', 'Restore User Success');
+        return redirect('users')->with('status', 'Kembalikan Pengguna Berhasil');
     }
 }

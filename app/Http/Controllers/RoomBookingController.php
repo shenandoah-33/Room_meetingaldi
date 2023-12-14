@@ -27,7 +27,7 @@ class RoomBookingController extends Controller
         $room = Room::findOrFail($request->room_id)->only('status');
 
         if($room['status'] != 'ready'){
-            Session::flash('message', 'Cannot booking, The Room is Full');
+            Session::flash('message', 'Ruangan Penuh! Tidak Bisa Memesan!');
             Session::flash('alert-class', 'alert-danger');
             return redirect('room-booking');
         }
@@ -42,7 +42,7 @@ class RoomBookingController extends Controller
                 $room->save();
                 DB::commit();
 
-                Session::flash('message', 'Booking Room Success');
+                Session::flash('message', 'Berhasil Memesan Ruangan');
                 Session::flash('alert-class', 'alert-success');
                 return redirect('room-booking');
             } catch (\Throwable $th) {
@@ -73,13 +73,13 @@ class RoomBookingController extends Controller
             $bookingData->actual_return_time = Carbon::now()->toDateTimeString();
             $bookingData->save();
 
-            Session::flash('message', 'Room Return Success');
+            Session::flash('message', 'Mengembalikan Ruangan Berhasil');
             Session::flash('alert-class', 'alert-success');
             return redirect('room-return');
         }
         else{
             // erorr notice (gagal)
-            Session::flash('message', 'Return Erorr!');
+            Session::flash('message', 'Gagal Mengembalikan Ruangan!');
             Session::flash('alert-class', 'alert-danger');
             return redirect('room-return');
         }

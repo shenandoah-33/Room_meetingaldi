@@ -6,7 +6,7 @@
 
 @section('content')
 
-<h1>Selamat Datang, {{Auth::user()->username}}</h1>
+<h2>Selamat Datang {{Auth::user()->username}}, di Pemesanan Ruang Rapat KPU</h2>
 
 <link rel="icon" href="img/logo-kpu.png" type="image/x-icon">
 
@@ -47,7 +47,7 @@
     </div>
 
     <div class="mt-5">
-        <h1>Daftar Pemesanan</h1>
+        <h2>Daftar Pemesanan</h2>
         <x-booking-table :booking='$booking' />
     </div>
 @endsection
