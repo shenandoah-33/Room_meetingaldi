@@ -3,13 +3,13 @@
         <thead>
             <tr>
                 <th>No.</th>
-                <th>User</th>
-                <th>Room</th>
+                <th>Pengguna</th>
+                <th>Ruangan</th>
                 <th>Biro</th>
                 <th>Agenda</th>
-                <th>Booking Time</th>
-                <th>Return Time</th>
-                <th>Actual Return Time</th>
+                <th>Waktu Pesan</th>
+                <th>Waktu Kembalikan</th>
+                <th>Sudah Kembalikan</th>
             </tr>
         </thead>
         <tbody>

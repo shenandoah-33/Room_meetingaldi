@@ -3,10 +3,10 @@
 @section('title', 'Room')
     
 @section('content')
-    <h1>Room</h1>
+    <h1>Ruangan</h1>
 
     <div class="my-4 d-flex justify-content-end">
-        <a href="room-add" class="btn btn-primary me-3">Add Data</a>
+        <a href="room-add" class="btn btn-primary me-3">Add Room</a>
         <a href="room-deleted" class="btn btn-secondary">View Deleted Data</a>
     </div>
 
@@ -23,11 +23,11 @@
             <thead>
                 <tr>
                     <th>No.</th>
-                    <th>Room Name</th>
-                    <th>Capacity</th>
-                    <th>Category</th>
+                    <th>Nama Ruangan</th>
+                    <th>Kapasitas</th>
+                    <th>Kategori</th>
                     <th>Status</th>
-                    <th>Action</th>
+                    <th>Aksi</th>
                 </tr>
             </thead>
             <tbody>
@@ -44,7 +44,7 @@
                         <td>{{ $item->status }}</td>
                         <td>
                             <a href="/room-edit/{{$item->slug}}" class="btn btn-primary">Edit</a>
-                            <a href="/room-delete/{{$item->slug}}" class="btn btn-danger">Delete</a>
+                            <a href="/room-delete/{{$item->slug}}" class="btn btn-danger">Hapus</a>
                         </td>
                     </tr>
                 @endforeach

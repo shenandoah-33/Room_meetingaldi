@@ -6,7 +6,7 @@
     
 @section('content')
 
-    <h1>Welcome, {{Auth::user()->username}}</h1>
+    <h1>Selamat Datang, {{Auth::user()->username}}</h1>
 
     <div class="row mt-5">
         <div class="col-lg-4">
@@ -45,7 +45,7 @@
     </div>
 
     <div class="mt-5">
-        <h1>Booking</h1>
+        <h1>Daftar Pemesanan</h1>
         <x-booking-table :booking='$booking' />
     </div>
 @endsection

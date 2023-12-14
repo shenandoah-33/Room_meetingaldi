@@ -4,7 +4,7 @@
     
 @section('content')
     <h1>
-        Users List
+        Daftar Pengguna
     </h1>
 
     <div class="mt-5 d-flex justify-content-end">
@@ -25,11 +25,11 @@
             <thead>
                 <tr>
                     <th>No.</th>
-                    <th>Username</th>
-                    <th>Phone</th>
+                    <th>Pengguna</th>
+                    <th>No. Telp</th>
                     <th>Biro</th>
                     <th>Agenda</th>
-                    <th>Action</th>
+                    <th>Aksi</th>
                 </tr>
             </thead>
             <tbody>

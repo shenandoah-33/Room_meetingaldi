@@ -7,17 +7,9 @@
     <form action="" method="get">
         <div class="row">
             <div class="col-12 col-sm-6">
-                <select name="category" id="category" class="form-control">
-                    <option value="">Select Category</option>
-                    @foreach ($categories as $item)
-                        <option value="{{ $item->id }}">{{ $item->name }}</option>
-                    @endforeach
-                </select>
-            </div>
-            <div class="col-12 col-sm-6">
                 <div class="input-group mb-3">
-                    <input type="text" name="title" class="form-control" placeholder="Search room's title">
-                    <button class="btn btn-primary" type="submit">Search</button>
+                    <input type="text" name="title" class="form-control" placeholder="Cari Ruangan">
+                    <button class="btn btn-primary" type="submit">Cari</button>
                   </div>
             </div>
         </div>
@@ -35,6 +27,12 @@
                         <p class="card-text text-end fw-bold {{ $item->status == 'ready' ? 'text-success' : 'text-danger'}}">
                             {{ $item->status }}
                         </p>
+                        
+                        @if($item->status == 'return')
+                            {{-- Ganti status menjadi "ready" jika ruangan sudah dikembalikan --}}
+                            <?php $item->status = 'ready'; ?>
+                        @endif
+                        
                         </div>
                     </div>
                 </div>

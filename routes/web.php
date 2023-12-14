@@ -36,6 +36,8 @@ Route::middleware('auth')->group(function() {
     Route::get('profile', [UserController::class, 'profile'])->middleware(['auth', 'only_client']);
     Route::get('room-booking', [RoomBookingController::class, 'index']);
     Route::post('room-booking', [RoomBookingController::class, 'store']);
+    Route::get('room-return', [RoomBookingController::class, 'returnRoom']);
+    Route::post('room-return', [RoomBookingController::class, 'saveReturnRoom']);
 
     Route::middleware('only_admin')->group(function() {
         Route::get('dashboard', [DashboardController::class, 'index']);
@@ -71,7 +73,6 @@ Route::middleware('auth')->group(function() {
 
         Route::get('booking', [BookingController::class, 'index']);
 
-        Route::get('room-return', [RoomBookingController::class, 'returnRoom']);
-        Route::post('room-return', [RoomBookingController::class, 'saveReturnRoom']);
+    
     });
 });

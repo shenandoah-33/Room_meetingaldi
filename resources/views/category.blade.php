@@ -3,10 +3,10 @@
 @section('title', 'Category')
 
 @section('content')
-    <h1>Category List</h1>
+    <h1>List Kategori</h1>
 
     <div class="mt-5 d-flex justify-content-end">
-        <a href="category-add" class="btn btn-primary me-3">Add Data</a>
+        <a href="category-add" class="btn btn-primary me-3">Add Category</a>
         <a href="category-deleted" class="btn btn-secondary">View Deleted Data</a>
     </div>
 
@@ -23,8 +23,8 @@
             <thead>
                 <tr>
                     <th>No.</th>
-                    <th>Name</th>
-                    <th>Action</th>
+                    <th>Nama Kategori</th>
+                    <th>Aksi</th>
                 </tr>
             </thead>
             <tbody>
@@ -34,7 +34,7 @@
                         <td>{{ $item->name }}</td>
                         <td>
                             <a href="category-edit/{{$item->slug}}" class="btn btn-info">Edit</a>
-                            <a href="category-delete/{{$item->slug}}" class="btn btn-danger">Delete</a>
+                            <a href="category-delete/{{$item->slug}}" class="btn btn-danger">Hapus</a>
                         </td>
                     </tr>
                     @endforeach

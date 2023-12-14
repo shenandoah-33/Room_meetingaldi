@@ -32,7 +32,7 @@
                             </a>
                             <a href="/users" @if(request()->route()->uri == 'users') class='active' @endif>
                               <i class="bi bi-people"></i>
-                              <span>Users</span>
+                              <span>Pengguna</span>
                             </a>
                             <a href="/rooms" @if(request()->route()->uri == 'rooms' || 
                               request()->route()->uri == 'room-add' || 
@@ -40,7 +40,7 @@
                               request()->route()->uri == 'room-edit/{slug}' || 
                               request()->route()->uri == 'room-deleted') class='active' @endif>
                               <i class="bi bi-bookmarks"></i>
-                              <span>Rooms</span>
+                              <span>Ruangan</span>
                             </a>
                             <a href="/categories" @if(request()->route()->uri == 'categories' || 
                               request()->route()->uri == 'category-add' || 
@@ -48,29 +48,29 @@
                               request()->route()->uri == 'category-edit/{slug}' || 
                               request()->route()->uri == 'category-deleted') class='active' @endif>
                               <i class="bi bi-door-closed"></i>
-                              <span>Categories</span>
+                              <span>Kategori</span>
                             </a>
                             <a href="/room-list" @if(request()->route()->uri == 'room-list') class='active' @endif>
                               <i class="bi bi-card-list"></i>
-                              <span>Room List</span>
+                              <span>List Ruangan</span>
                             </a>
                             <a href="/booking" @if(request()->route()->uri == 'booking') class='active' @endif>
                               <i class="bi bi-card-checklist"></i>
-                              <span>Booking</span>
-                            </a>
-                            <a href="/room-return" @if(request()->route()->uri == 'room-return') class='active' @endif>
-                              <i class="bi bi-arrow-return-right"></i>
-                              <span>Room Return</span>
+                              <span>Pemesanan</span>
                             </a>
                             <a href="/logout">
                               <i class="bi bi-box-arrow-left"></i>
-                              <span>Logout</span>
+                              <span>Keluar</span>
                             </a>
                         @else
                             <a href="/profile" @if(request()->route()->uri == 'profile') class='active' @endif>Profile</a>
-                            <a href="/room-list" @if(request()->route()->uri == 'room-list') class='active' @endif>Room List</a>
-                            <a href="/room-booking" @if(request()->route()->uri == 'room-booking') class='active' @endif>Room Booking</a>
-                            <a href="/logout">Logout</a>
+                            <a href="/room-list" @if(request()->route()->uri == 'room-list') class='active' @endif>Daftar Ruangan</a>
+                            <a href="/room-booking" @if(request()->route()->uri == 'room-booking') class='active' @endif>Pesan</a>
+                            <a href="/room-return" @if(request()->route()->uri == 'room-return') class='active' @endif>
+                              <i class="bi bi-arrow-return-right"></i>
+                              <span>Kembalikan</span>
+                            </a>
+                            <a href="/logout">Keluar</a>
                         @endif
                       @else
                       <a href="/login">Login</a>
