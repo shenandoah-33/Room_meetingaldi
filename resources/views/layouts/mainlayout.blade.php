@@ -14,6 +14,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <title>Meeting Room</title>
   </head>
+  <link rel="icon" href="img/logo-kpu.png" type="image/x-icon">
 
 <body>
   <div class="main d-flex flex-column justify-content-between">
@@ -22,9 +23,9 @@
               <div class="sidebar col-lg-2 collapse fw-bold d-lg-block" id="navbarTogglerDemo02">
                 <div class="logo fw-bold text-center">
                   <img src="{{asset('img/logo-kpu.png')}}" alt="gambar" width="45px">
-                  <i>Room<span class="danger">Meeting</span></i>
+                  {{-- <i>Room<span class="danger">Meeting</span></i> --}}
                 </div>
-                @if (Auth::user())              
+                @if (Auth::user())
                       @if (Auth::user()->role_id == 1)
                             <a href="/dashboard" @if(request()->route()->uri == 'dashboard') class='active' @endif>
                               <i class="bi bi-speedometer2"></i>
@@ -34,18 +35,18 @@
                               <i class="bi bi-people"></i>
                               <span>Pengguna</span>
                             </a>
-                            <a href="/rooms" @if(request()->route()->uri == 'rooms' || 
-                              request()->route()->uri == 'room-add' || 
-                              request()->route()->uri == 'room-delete/{slug}' || 
-                              request()->route()->uri == 'room-edit/{slug}' || 
+                            <a href="/rooms" @if(request()->route()->uri == 'rooms' ||
+                              request()->route()->uri == 'room-add' ||
+                              request()->route()->uri == 'room-delete/{slug}' ||
+                              request()->route()->uri == 'room-edit/{slug}' ||
                               request()->route()->uri == 'room-deleted') class='active' @endif>
                               <i class="bi bi-bookmarks"></i>
                               <span>Ruangan</span>
                             </a>
-                            <a href="/categories" @if(request()->route()->uri == 'categories' || 
-                              request()->route()->uri == 'category-add' || 
-                              request()->route()->uri == 'category-delete/{slug}' || 
-                              request()->route()->uri == 'category-edit/{slug}' || 
+                            <a href="/categories" @if(request()->route()->uri == 'categories' ||
+                              request()->route()->uri == 'category-add' ||
+                              request()->route()->uri == 'category-delete/{slug}' ||
+                              request()->route()->uri == 'category-edit/{slug}' ||
                               request()->route()->uri == 'category-deleted') class='active' @endif>
                               <i class="bi bi-door-closed"></i>
                               <span>Kategori</span>

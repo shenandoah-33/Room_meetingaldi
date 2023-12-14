@@ -105,7 +105,7 @@
 
                 <img src="img/logo-kpu.png" alt="">
                 <div class="fw-bold text-center" style="margin-top:115px; ">
-                    <p class="text-light">KOMISI PEMILIHAN UMUM REPUBLIK INDONESIA</p>
+                    <p class="text-dark">KOMISI PEMILIHAN UMUM REPUBLIK INDONESIA</p>
                 </div>
 
             </div>
@@ -115,7 +115,7 @@
                 <div class="input-box">
 
                     @if ($errors->any())
-                    <div class="alert alert-danger" style="width: 500px">
+                    <div class="alert alert-danger" style="width: 100px">
                         <ul>
                             @foreach ($errors->all() as $error)
                                 <li>{{ $error }}</li>
@@ -130,7 +130,7 @@
                         </div>
                     @endif
 
-                   <header>Register</header>
+                   <header>REGISTER</header>
                    <form action="/register" method="post">
                     @csrf
                    <div class="input-field">
