@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+
+
 :root {
     --color-info-dark: #7d8da1;
     --color-dark: #363949;
@@ -27,7 +30,7 @@
     --box-shadow: 0 2rem 3rem var(--color-light);
 }
 
-/* CSS SIDE BAR */
+/* CSS SIDE BAR  */
 .sidebar {
     background: #181a1e;
     color: #fff;
