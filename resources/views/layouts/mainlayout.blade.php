@@ -1,4 +1,144 @@
 <!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Admin Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="{{asset('css/style.dashboard.css')}}" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <aside id="sidebar" class="js-sidebar">
+            <!-- Content For Sidebar -->
+            <div class="h-100">
+                <div class="sidebar-logo">
+                    <a href="/dashboard">Roomeeting</a>
+                </div>
+                <ul class="sidebar-nav">
+                    <li class="sidebar-item">
+                        @if (Auth::user())
+                            @if (Auth::user()->role_id == 1)
+                            <a href="/dashboard" @if(request()->route()->uri == 'dashboard') class='active' @endif>
+                                <i class="bi bi-speedometer2"></i>
+                                <span>Dashboard</span>
+                            </a>
+                    </li>
+                        <li class="sidebar-item">
+                            <a href="/users" @if(request()->route()->uri == 'users') class='active' @endif>
+                                <i class="bi bi-people"></i>
+                                <span>Pengguna</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                             <a href="/rooms" @if(request()->route()->uri == 'rooms' ||
+                                request()->route()->uri == 'room-add' ||
+                                request()->route()->uri == 'room-delete/{slug}' ||
+                                request()->route()->uri == 'room-edit/{slug}' ||
+                                request()->route()->uri == 'room-deleted') class='active' @endif>
+                                <i class="bi bi-bookmarks"></i>
+                                <span>Ruangan</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                             <a href="/categories" @if(request()->route()->uri == 'categories' ||
+                                request()->route()->uri == 'category-add' ||
+                                request()->route()->uri == 'category-delete/{slug}' ||
+                                request()->route()->uri == 'category-edit/{slug}' ||
+                                request()->route()->uri == 'category-deleted') class='active' @endif>
+                                <i class="bi bi-door-closed"></i>
+                                <span>Kategori</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="/room-list" @if(request()->route()->uri == 'room-list') class='active' @endif>
+                                <i class="bi bi-card-list"></i>
+                                <span>List Ruangan</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="/booking" @if(request()->route()->uri == 'booking') class='active' @endif>
+                                <i class="bi bi-card-checklist"></i>
+                                <span>Pemesanan</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="/logout">
+                                <i class="bi bi-box-arrow-left"></i>
+                                <span>Keluar</span>
+                            </a>
+                        </li>
+
+                            @else
+                        <li class="sidebar-item">
+                            <a href="/profile" @if(request()->route()->uri == 'profile') class='active' @endif>
+                                <i class="bi bi-people"></i>
+                                <span>Profil</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="/room-list" @if(request()->route()->uri == 'room-list') class='active' @endif>
+                                <i class="bi bi-card-list"></i>
+                                <span>Daftar Ruangan</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="/room-booking" @if(request()->route()->uri == 'room-booking') class='active' @endif>
+                                <i class="bi bi-card-checklist"></i>
+                                <span>Pesan</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="/room-return" @if(request()->route()->uri == 'room-return') class='active' @endif>
+                            <i class="bi bi-arrow-return-right"></i>
+                            <span>Kembalikan</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="/logout">
+                                <i class="bi bi-arrow-return-right"></i>
+                                <span>Keluar</span>
+                            </a>
+                        </li>
+                            @endif
+                        @else
+                        <a href="/login">Login</a>
+                        @endif
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <div class="main">
+            <nav class="navbar navbar-expand px-3 border-bottom">
+                <button class="btn" id="sidebar-toggle" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+
+                    @yield('content')
+
+
+
+            <a href="#" class="theme-toggle">
+                <i class="fa-regular fa-moon"></i>
+                <i class="fa-regular fa-sun"></i>
+            </a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/dashboard.js"></script>
+</body>
+
+</html>
+
+
+{{-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -24,7 +164,7 @@
               <div class="sidebar col-lg-2 collapse fw-bold d-lg-block" id="navbarTogglerDemo02">
                 <div class="logo fw-bold text-center">
                   <img src="{{asset('img/logo-kpu.png')}}" alt="gambar" width="45px">
-                  {{-- <i>Room<span class="danger">Meeting</span></i>--}}
+                  {{-- <i>Room<span class="danger">Meeting</span></i>
                 </div>
                 @if (Auth::user())
                       @if (Auth::user()->role_id == 1)
@@ -92,4 +232,4 @@
       AOS.init();
     </script>
 </body>
-</html>
+</html> --}}

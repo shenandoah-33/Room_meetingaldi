@@ -1,31 +1,40 @@
-<div>
-    <table class="table">
-        <thead>
-            <tr>
-                <th>No.</th>
-                <th>Pengguna</th>
-                <th>Ruangan</th>
-                <th>Biro</th>
-                <th>Agenda</th>
-                <th>Waktu Pesan</th>
-                <th>Waktu Kembalikan</th>
-                <th>Sudah Kembalikan</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach ($booking as $item)
-                <tr class="{{ $item->actual_return_time == null ? '' : ($item->return_time < $item->actual_return_time ? 
-                    'bg-danger' : 'bg-success') }}">
-                    <td>{{ $loop->iteration }}</td>
-                    <td>{{ $item->user->username }}</td>
-                    <td>{{ $item->room->room_name }}</td>
-                    <td>{{ $item->user->biro }}</td>
-                    <td>{{ $item->user->agenda }}</td>
-                    <td>{{ $item->booking_time }}</td>
-                    <td>{{ $item->return_time }}</td>
-                    <td>{{ $item->actual_return_time }}</td>
-                </tr>
-            @endforeach
-        </tbody>
-    </table>
-</div>
+
+            <div class="card border-0">
+                <div class="card-header">
+                    <h5 class="card-title">
+                        Pemesanan Ruang
+                    </h5>
+                </div>
+                <div class="tabel-responsive" style="overflow-x: auto;">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">No</th>
+                                <th scope="col">pengguna</th>
+                                <th scope="col">Ruangan</th>
+                                <th scope="col">Biro</th>
+                                <th scope="col">Agenda</th>
+                                <th scope="col">Waktu Pesan</th>
+                                <th scope="col">Waktu Kembalikan</th>
+                                <th scope="col">Sudah Kembalikan</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach ($booking as $item)
+                                <tr class="{{ $item->actual_return_time == null ? '' : ($item->return_time < $item->actual_return_time ?
+                                    'bg-danger' : 'bg-success') }}">
+                                    <td>{{ $loop->iteration }}</td>
+                                    <td>{{ $item->user->username }}</td>
+                                    <td>{{ $item->room->room_name }}</td>
+                                    <td>{{ $item->user->biro }}</td>
+                                    <td>{{ $item->user->agenda }}</td>
+                                    <td>{{ $item->booking_time }}</td>
+                                    <td>{{ $item->return_time }}</td>
+                                    <td>{{ $item->actual_return_time }}</td>
+                                </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
