@@ -3,10 +3,12 @@
 @section('title', 'Delete User')
 
 @section('content')
+
+
 <main class="content px-3 py-2">
     <div class="container-fluid">
-        <div class="mb-3">
-            <h2>Are You Sure to Delete User {{$user->username}} ?</h2>
+        <div class="mb-3 align-items-center justify-content-center text-center">
+            <h2>Yakin ingin hapus {{$user->username}} ?</h2>
             <div class="mt-5">
                 <a href="/user-destroy/{{$user->slug}}" class="btn btn-danger me-5">Sure</a>
                 <a href="/users" class="btn btn-info">Cancel</a>
@@ -15,3 +17,4 @@
     </div>
 </main>
 @endsection
+

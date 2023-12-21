@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Admin Dashboard</title>
+    <title>Room Meeting </title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
@@ -74,37 +74,38 @@
                             </a>
                         </li>
 
+                        <ul class="sidebar-nav">
                             @else
-                        <li class="sidebar-item">
-                            <a href="/profile" @if(request()->route()->uri == 'profile') class='active' @endif>
-                                <i class="bi bi-people"></i>
-                                <span>Profil</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a href="/room-list" @if(request()->route()->uri == 'room-list') class='active' @endif>
-                                <i class="bi bi-card-list"></i>
-                                <span>Daftar Ruangan</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a href="/room-booking" @if(request()->route()->uri == 'room-booking') class='active' @endif>
-                                <i class="bi bi-card-checklist"></i>
-                                <span>Pesan</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a href="/room-return" @if(request()->route()->uri == 'room-return') class='active' @endif>
-                            <i class="bi bi-arrow-return-right"></i>
-                            <span>Kembalikan</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a href="/logout">
+                                <a href="/profile" @if(request()->route()->uri == 'profile') class='active' @endif>
+                                    <i class="bi bi-people"></i>
+                                    <span>Profil</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="/room-list" @if(request()->route()->uri == 'room-list') class='active' @endif>
+                                    <i class="bi bi-card-list"></i>
+                                    <span>List Ruangan</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="/room-booking" @if(request()->route()->uri == 'room-booking') class='active' @endif>
+                                    <i class="bi bi-card-checklist"></i>
+                                    <span>Pesan</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="/room-return" @if(request()->route()->uri == 'room-return') class='active' @endif>
                                 <i class="bi bi-arrow-return-right"></i>
-                                <span>Keluar</span>
-                            </a>
-                        </li>
+                                <span>Kembalikan</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="/logout">
+                                    <i class="bi bi-box-arrow-left"></i>
+                                    <span>Keluar</span>
+                                </a>
+                            </li>
+                        </ul>
                             @endif
                         @else
                         <a href="/login">Login</a>

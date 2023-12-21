@@ -87,6 +87,18 @@ h4 {
     margin-left: 0;
 }
 
+/* .sidebar a:hover {
+    background: #dddddd;
+    border-radius: 2rem;
+} */
+
+.active {
+    background-color: transparent;
+    color: var(--bs-yellow);
+    font-weight: bold;
+    border: none;
+}
+
 .sidebar-header {
     color: #e9ecef;
     font-size: .75rem;

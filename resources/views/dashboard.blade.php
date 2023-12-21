@@ -12,7 +12,7 @@
 <main class="content px-3 py-2">
     <div class="container-fluid">
         <div class="mb-3">
-            <h2>Selamat Datang {{Auth::user()->username}}, di Pemesanan Ruang Rapat KPU</h2>
+            <h2>Admin Dashboard</h2>
         </div>
         <div class="row">
             <div class="col-12 col-md-6 d-flex">
@@ -22,7 +22,7 @@
                             <div class="col-6">
                                 <div class="p-3 m-1">
                                     <h4>Welcome Back, Admin</h4>
-                                    <p class="mb-0">Admin Dashboard, Komisi Pemilihan Umum</p>
+                                    <p class="mb-0">Admin Dashboard {{Auth::user()->username}}, Komisi Pemilihan Umum</p>
                                 </div>
                             </div>
                             <div class="col-6 align-self-end text-end">
@@ -34,49 +34,64 @@
                 </div>
             </div>
             <div class="col-12 col-md-6 d-flex">
-                <div class="card flex-fill bg-light text-dark border">
-                    <div class="card-body py-4">
-                        <div class="d-flex align-items-start">
-                            <div class="flex-grow-1">
-                                <div class="card-count">{{$room_count}}</div>
-                                <p class="mb-2">Ruangan
-                                </p>
+                <div class="card flex-fill text-dark illustration">
+                    <div class="card-body p-0 d-flex flex-fill">
+                        <div class="row g-0 w-100">
+                            <div class="col-6">
+                                <div class="p-3 m-1">
+                                    <h4>Jumlah Ruangan</h4>
+                                    <p class="h2 text-bold">{{$room_count}}</p>
+                                </div>
+                            </div>
+                            <div class="col-6 align-self-end text-end">
+                                <img src="img/Rapatbundar.png" class="img-fluid illustration-img"
+                                    alt="gambar">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 d-flex">
-                <div class="card flex-fill bg-light text-dark border">
-                    <div class="card-body py-4">
-                        <div class="d-flex align-items-start">
-                            <div class="flex-grow-1">
-                                <div class="card-count">{{$category_count}}</div>
-                                <p class="mb-2">kategori
-                                </p>
+                <div class="card flex-fill text-dark illustration">
+                    <div class="card-body p-0 d-flex flex-fill">
+                        <div class="row g-0 w-100">
+                            <div class="col-6">
+                                <div class="p-3 m-1">
+                                    <h4>Kategori Ruangan</h4>
+                                    <p class="h4 text-bold">{{$category_count}} Lantai</p>
+                                </div>
+                            </div>
+                            <div class="col-6 align-self-end text-end">
+                                <img src="img/Rapatkosong.png" class="img-fluid illustration-img"
+                                    alt="gambar">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 d-flex">
-                <div class="card flex-fill bg-light text-dark border">
-                    <div class="card-body py-4">
-                        <div class="d-flex align-items-start">
-                            <div class="flex-grow-1">
-                                <div class="card-count">{{$user_count}}</div>
-                                <p class="mb-2">Pengguna
-                                </p>
+                <div class="card flex-fill text-dark illustration">
+                    <div class="card-body p-0 d-flex flex-fill">
+                        <div class="row g-0 w-100">
+                            <div class="col-6">
+                                <div class="p-3 m-1">
+                                    <h4>Jumlah Pengguna</h4>
+                                    <p class="h2 text-bold">{{$user_count}}</p>
+                                </div>
+                            </div>
+                            <div class="col-6 align-self-end text-end">
+                                <img src="img/pengguna.png" class="img-fluid illustration-img"
+                                    alt="gambar">
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="mt-5">
+                <h2>Daftar Pemesanan</h2>
+                <x-booking-table :booking='$booking' />
             </div>
         </div>
-    </div>
-    <div class="content px-3 py-2">
-        <h2>Daftar Pemesanan</h2>
-        <x-booking-table :booking='$booking' />
     </div>
 </main>
 

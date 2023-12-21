@@ -47,7 +47,7 @@
                 </div>
 
                 <div class="mt-5">
-                    <h1>User's Booking</h1>
+                    <h2>Riwayat Booking</h2>
                     <x-booking-table :booking='$booking' />
                 </div>
             </div>
