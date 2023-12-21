@@ -22,7 +22,7 @@
             <div class="mb-3">
                 <label for="user" class="form-label">Pengguna</label>
                 <select name="user_id" id="user" class="form-control inputbox">
-                    <option value="">Pilih User</option>
+                    <option value="">Pilih Pengguna</option>
                     @foreach ($users as $item)
                         <option value="{{ $item->id }}">{{ $item->username }}</option>
                     @endforeach
