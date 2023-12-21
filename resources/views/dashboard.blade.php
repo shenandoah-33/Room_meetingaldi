@@ -21,8 +21,8 @@
                         <div class="row g-0 w-100">
                             <div class="col-6">
                                 <div class="p-3 m-1">
-                                    <h4>Welcome Back, Admin</h4>
-                                    <p class="mb-0">Admin Dashboard {{Auth::user()->username}}, Komisi Pemilihan Umum</p>
+                                    <h4>Selamat Datang, Admin</h4>
+                                    <p class="mb-0">Admin Dashboard, Komisi Pemilihan Umum</p>
                                 </div>
                             </div>
                             <div class="col-6 align-self-end text-end">
