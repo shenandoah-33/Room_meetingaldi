@@ -9,7 +9,7 @@
             <div class="mb-3">
                 <h2>Pengguna yang dilarang</h2>
                 <div class="d-flex justify-content-end">
-                    <a href="/users" class="btn btn-secondary me-3 mt-5">Back</a>
+                    <a href="/users" class="btn btn-secondary me-3 mt-5">Kembali</a>
                 </div>
 
                 <div class="mt-5">
@@ -31,9 +31,10 @@
                                 <tr>
                                     <th>No.</th>
                                     <th>Username</th>
-                                    <th>Phone</th>
+                                    <th>No. Telp</th>
                                     <th>Biro</th>
-                                    <th>Action</th>
+                                    <th>Agenda</th>
+                                    <th>Aksi</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -49,8 +50,9 @@
                                         @endif
                                     </td>
                                     <td>{{ $item->biro }}</td>
+                                    <td>{{ $item->agenda }}</td>
                                     <td>
-                                        <a href="/user-restore/{{$item->slug}}" class="btn btn-info">Restore</a>
+                                        <a href="/user-restore/{{$item->slug}}" class="btn btn-info">Pulihkan</a>
                                     </td>
                                 </tr>
                                 @endforeach

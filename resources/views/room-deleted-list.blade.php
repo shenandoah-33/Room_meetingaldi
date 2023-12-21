@@ -30,9 +30,11 @@
                                 <thead>
                                     <tr>
                                         <th>No.</th>
-                                        <th>Room Name</th>
-                                        <th>Capacity</th>
-                                        <th>Action</th>
+                                        <th>Nama Ruangan</th>
+                                        <th>Kapasitas</th>
+                                        <th>Kategori</th>
+                                        <th>Status</th>
+                                        <th>Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -41,6 +43,11 @@
                                             <td>{{ $loop->iteration }}</td>
                                             <td>{{ $item->room_name }}</td>
                                             <td>{{ $item->capacity }}</td>
+                                            <td>
+                                                @foreach ($item->categories as $category)
+                                                    {{ $category->name }}
+                                                @endforeach
+                                            </td>
                                             <td>
                                                 <a href="/room-restore/{{$item->slug}}" class="btn btn-secondary">Restore</a>
                                             </td>

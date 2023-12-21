@@ -29,7 +29,7 @@
                         <input type="text" class="form-control" readonly value="{{$user->username}}">
                 </div>
                 <div class="mb-3">
-                    <label for="" class="form-label">Phone</label>
+                    <label for="" class="form-label">No. Telp</label>
                         <input type="text" class="form-control" readonly value="{{$user->phone}}">
                 </div>
                 <div class="mb-3">

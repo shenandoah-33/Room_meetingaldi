@@ -7,9 +7,9 @@
     <main class="content px-3 py-2">
         <div class="container-fluid">
             <div class="mb-3">
-                <h2>Hapus Kategori</h2>
+                <h2>Kategori Yang Di Hapus</h2>
                 <div class="mt-5 d-flex justify-content-end">
-                    <a href="/categories" class="btn btn-primary me-3">Back</a>
+                    <a href="/categories" class="btn btn-primary me-3">Kembali</a>
                 </div>
 
                     <div class="mt-5">
@@ -29,8 +29,8 @@
                             <thead>
                                 <tr>
                                     <th>No.</th>
-                                    <th>Name</th>
-                                    <th>Action</th>
+                                    <th>Nama Kategori</th>
+                                    <th>Aksi</th>
                                 </tr>
                             </thead>
                             <tbody>

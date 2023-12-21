@@ -24,13 +24,13 @@
                     @csrf
                     @method('put')
                     <div>
-                        <label for="name" class="form-label">Name</label>
-                        <input type="text" name="name" id="name" class="form-control" value="{{$category->name}}" placeholder="Category Name">
+                        <label for="name" class="form-label">Nama Kategori</label>
+                        <input type="text" name="name" id="name" class="form-control" value="{{$category->name}}" placeholder="Nama Katgori">
                     </div>
 
                     <div class="mt-3">
                         <button class="btn btn-success me-3" type="submit">Edit</button>
-                        <a href="/categories" class="btn btn-danger">Cancel</a>
+                        <a href="/categories" class="btn btn-danger">Batal</a>
                     </div>
                 </form>
             </div>

@@ -26,22 +26,22 @@
                     <form action="/room-edit/{{$room->slug}}" method="post" enctype="multipart/form-data">
                         @csrf
                         <div class="mb-3">
-                            <label for="room_name" class="form-label">Room Name</label>
+                            <label for="room_name" class="form-label">Nama Ruangan</label>
                             <input type="text" name="room_name" id="room_name" class="form-control" placeholder="Room Name" value="{{ $room->room_name }}">
                         </div>
 
                         <div class="mb-3">
-                            <label for="capacity" class="form-label">Capacity</label>
+                            <label for="capacity" class="form-label">Kapasitas</label>
                             <input type="text" name="capacity" id="capacity" class="form-control" placeholder="Capacity" value="{{ $room->capacity }}">
                         </div>
 
                         <div class="mb-3">
-                            <label for="image" class="form-label">Image</label>
+                            <label for="image" class="form-label">Gambar</label>
                             <input type="file" name="image" class="form-control">
                         </div>
 
                         <div class="mb-3">
-                            <label for="currentImage" class="form-label" style="display:block">Current Image</label>
+                            <label for="currentImage" class="form-label" style="display:block">Gambar Sebelumnya</label>
                             @if ($room->cover!='')
                                 <img src="{{ asset('storage/cover/'.$room->cover) }}" alt="" width="100px">
                             @else
@@ -50,7 +50,7 @@
                         </div>
 
                         <div class="mb-3">
-                            <label for="category" class="form-label">Category</label>
+                            <label for="category" class="form-label">Kategori</label>
                             <select name="categories[]" id="category" class="form-control select-multiple" multiple>
                                 @foreach ($categories as $item)
                                 <option value="{{ $item->id }}">{{ $item->name }}</option>
@@ -59,7 +59,7 @@
                         </div>
 
                         <div class="mb-3">
-                            <label for="currentCategory" class="form-label">Current Category</label>
+                            <label for="currentCategory" class="form-label">Kategori Sebelumnya</label>
                                 <ul>
                                     @foreach ($room->categories as $category)
                                         <li>{{ $category->name }}</li>
@@ -68,8 +68,8 @@
                         </div>
 
                         <div class="mt-3">
-                            <button class="btn btn-success me-3" type="submit">Save</button>
-                            <a href="/rooms" class="btn btn-danger">Cancel</a>
+                            <button class="btn btn-success me-3" type="submit">Simpan</button>
+                            <a href="/rooms" class="btn btn-danger">Batal</a>
                         </div>
                     </form>
                 </div>

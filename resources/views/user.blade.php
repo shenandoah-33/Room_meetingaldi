@@ -32,7 +32,7 @@
                             <thead>
                                 <tr>
                                     <th>No.</th>
-                                    <th>Pengguna</th>
+                                    <th>Username</th>
                                     <th>No. Telp</th>
                                     <th>Biro</th>
                                     <th>Agenda</th>

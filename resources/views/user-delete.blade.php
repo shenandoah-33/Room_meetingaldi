@@ -10,8 +10,8 @@
         <div class="mb-3 align-items-center justify-content-center text-center">
             <h2>Yakin ingin hapus {{$user->username}} ?</h2>
             <div class="mt-5">
-                <a href="/user-destroy/{{$user->slug}}" class="btn btn-danger me-5">Sure</a>
-                <a href="/users" class="btn btn-info">Cancel</a>
+                <a href="/user-destroy/{{$user->slug}}" class="btn btn-danger me-5">Hapus</a>
+                <a href="/users" class="btn btn-info">Batal</a>
             </div>
         </div>
     </div>

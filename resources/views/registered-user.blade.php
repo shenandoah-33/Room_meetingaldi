@@ -11,7 +11,7 @@
                 <div class="mt-5 d-flex justify-content-end">
                     <a href="/users" class="btn btn-secondary">Approved User List</a>
                 </div>
-                <div class="card border-0">
+                <div class="card border-0 mt-5">
                     <div class="card-header">
                         <h5 class="card-title">
                             Pengguna Baru
@@ -23,10 +23,10 @@
                                 <tr>
                                     <th>No.</th>
                                     <th>Username</th>
-                                    <th>Phone</th>
+                                    <th>No. Telp</th>
                                     <th>Biro</th>
                                     <th>Agenda</th>
-                                    <th>Action</th>
+                                    <th>Aksi</th>
                                 </tr>
                             </thead>
                             <tbody>
