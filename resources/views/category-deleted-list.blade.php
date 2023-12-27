@@ -39,7 +39,7 @@
                                         <td>{{ $loop->iteration }}</td>
                                         <td>{{ $item->name }}</td>
                                         <td>
-                                            <a href="category-restore/{{$item->slug}}" class="btn btn-secondary">Restore</a>
+                                            <a href="category-restore/{{$item->slug}}" class="btn btn-secondary">Pulihkan</a>
                                         </td>
                                     </tr>
                                 @endforeach

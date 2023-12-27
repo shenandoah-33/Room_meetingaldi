@@ -8,8 +8,8 @@
             <div class="mb-3">
                 <h2>List Kategori</h2>
                 <div class="mt-5 d-flex justify-content-end">
-                    <a href="category-add" class="btn btn-primary me-3">Add Category</a>
-                    <a href="category-deleted" class="btn btn-secondary">View Deleted Data</a>
+                    <a href="category-add" class="btn btn-primary me-3">Tambah Kategori</a>
+                    <a href="category-deleted" class="btn btn-secondary">Kategori Yang Di Hapus</a>
                 </div>
 
                     <div class="mt-5">

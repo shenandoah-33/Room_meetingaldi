@@ -10,9 +10,9 @@
                 <h2>Detail Pengguna</h2>
                 <div class="mt-2 d-flex justify-content-end">
                     @if ($user->status == 'inactive')
-                        <a href="/user-approve/{{$user->slug}}" class="btn btn-info me-3">Approved User</a>
+                        <a href="/user-approve/{{$user->slug}}" class="btn btn-info me-3">Terima Pengguna</a>
                     @endif
-                    <a href="/users" class="btn btn-secondary">Back</a>
+                    <a href="/users" class="btn btn-secondary">Kembali</a>
                 </div>
 
                 <div class="mt-5">

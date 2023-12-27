@@ -9,8 +9,8 @@
             <div class="mb-3">
                 <h2>Ruangan</h2>
                 <div class="my-4 d-flex justify-content-end">
-                    <a href="room-add" class="btn btn-primary me-3">Add Room</a>
-                    <a href="room-deleted" class="btn btn-secondary">View Deleted Data</a>
+                    <a href="room-add" class="btn btn-primary me-3">Tambah Ruangan</a>
+                    <a href="room-deleted" class="btn btn-secondary">Ruangan Yang Di Hapus</a>
                 </div>
 
                         <div class="mt-5">

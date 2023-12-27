@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Room Meeting </title>
+    <title>Room Meeting | @yield('title') </title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
@@ -30,7 +30,11 @@
                             </a>
                     </li>
                         <li class="sidebar-item">
-                            <a href="/users" @if(request()->route()->uri == 'users') class='active' @endif>
+                            <a href="/users" @if(request()->route()->uri == 'users' || 
+                                request()->route()->uri == 'registered-users' || 
+                                request()->route()->uri == 'user-detail/{slug}' || 
+                                request()->route()->uri == 'user-ban/{slug}' || 
+                                request()->route()->uri == 'user-banned') class='active' @endif>
                                 <i class="bi bi-people"></i>
                                 <span>Pengguna</span>
                             </a>

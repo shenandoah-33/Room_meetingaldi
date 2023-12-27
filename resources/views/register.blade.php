@@ -125,7 +125,7 @@
                     @endif
 
                     @if (session('status'))
-                        <div class="alert alert-success">
+                        <div class="alert alert-success mt-1">
                             {{ session('message') }}
                         </div>
                     @endif

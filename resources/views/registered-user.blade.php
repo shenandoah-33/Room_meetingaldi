@@ -9,7 +9,7 @@
             <div class="mb-3">
                 <h2>Daftar Pengguna Baru</h2>
                 <div class="mt-5 d-flex justify-content-end">
-                    <a href="/users" class="btn btn-secondary">Approved User List</a>
+                    <a href="/users" class="btn btn-secondary">Daftar Pengguna</a>
                 </div>
                 <div class="card border-0 mt-5">
                     <div class="card-header">

@@ -7,7 +7,7 @@
     <main class="content px-3 py-2">
         <div class="container-fluid">
             <div class="mb-3">
-                <h2>Hapus Ruangan</h2>
+                <h2>Ruangan Yang Di Hapus</h2>
                 <div class="mt-5 d-flex justify-content-end">
                     <a href="/rooms" class="btn btn-primary me-3">Back</a>
                 </div>
@@ -48,8 +48,9 @@
                                                     {{ $category->name }}
                                                 @endforeach
                                             </td>
+                                            <td>{{ $item->status }}</td>
                                             <td>
-                                                <a href="/room-restore/{{$item->slug}}" class="btn btn-secondary">Restore</a>
+                                                <a href="/room-restore/{{$item->slug}}" class="btn btn-secondary">Pulihkan</a>
                                             </td>
                                         </tr>
                                     @endforeach

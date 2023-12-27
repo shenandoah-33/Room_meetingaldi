@@ -9,8 +9,8 @@
             <div class="mb-3">
                 <h2>Daftar Pengguna</h2>
                 <div class="mt-5 d-flex justify-content-end">
-                    <a href="/registered-users" class="btn btn-primary me-3">New Registered User</a>
-                    <a href="/user-banned" class="btn btn-secondary">View Banned User</a>
+                    <a href="/registered-users" class="btn btn-primary me-3">Daftar Pengguna Baru</a>
+                    <a href="/user-banned" class="btn btn-secondary">Daftar Pengguna Dilarang</a>
                 </div>
 
                 <div class="mt-5">
