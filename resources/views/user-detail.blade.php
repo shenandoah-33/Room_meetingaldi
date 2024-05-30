@@ -4,12 +4,6 @@
 
 @section('content')
 
-<head>
-    <link rel="stylesheet" href="{{asset('css/style.dashboard.css')}}" />
-    @stack('styles.dashboard.css')
-</head>
-
-
 
 <div class="wrapper">
     <div class="main">
@@ -72,6 +66,5 @@
         </main>
     </div>
 </div>
-<script src="./js/dashboard.js"></script>
- @stack('dashboard.js')
+
 @endsection
