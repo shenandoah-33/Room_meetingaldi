@@ -4,6 +4,13 @@
 
 @section('content')
 
+<head>
+    <link rel="stylesheet" href="{{asset('css/style.dashboard.css')}}" />
+    @stack('styles.dashboard.css')
+</head>
+
+
+
 <div class="wrapper">
     <div class="main">
         <main class="content px-3 py-2">
@@ -57,7 +64,7 @@
                     </div>
 
                     <div class="mt-5">
-                        <h2>Riwayat Booking</h2>
+                        <h2>Riwayat Booking Test</h2>
                         <x-booking-table :booking='$booking' />
                     </div>
                 </div>
@@ -65,4 +72,6 @@
         </main>
     </div>
 </div>
+<script src="./js/dashboard.js"></script>
+ @stack('dashboard.js')
 @endsection
