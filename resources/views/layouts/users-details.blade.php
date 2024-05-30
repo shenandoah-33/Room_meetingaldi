@@ -1,15 +1,15 @@
 @extends('layouts.mainlayout')
 
-@section('title', 'Users Detail')
+@section('title', 'Users Details')
 
-@section('content')
+@section('conten')
 
 <div class="wrapper">
     <div class="main">
         <main class="content px-3 py-2">
             <div class="container-fluid">
                 <div class="mb-3">
-                    <h4>Detail Pengguna</h4>
+                    <h2>Detail Penggunasss</h2>
                     <div class="mt-2 d-flex justify-content-end">
                         @if ($user->status == 'inactive')
                             <a href="/user-approve/{{$user->slug}}" class="btn btn-info me-3">Terima Pengguna</a>
@@ -65,4 +65,5 @@
         </main>
     </div>
 </div>
+
 @endsection

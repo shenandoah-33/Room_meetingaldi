@@ -17,7 +17,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12 col-md-6 d-flex">
-                        <div class="card flex-fill border-0">
+                        <div class="card flex-fill border-0 illustration">
                             <div class="card-body p-0 d-flex flex-fill">
                                 <div class="row g-0 w-100">
                                     <div class="col-6">
@@ -35,7 +35,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6 d-flex">
-                        <div class="card flex-fill border-0 illustration">
+                        <div class="card flex-fill border-0">
                             <div class="card-body p-0 d-flex flex-fill">
                                 <div class="row g-0 w-100">
                                     <div class="col-6">

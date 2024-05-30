@@ -31,7 +31,7 @@ class UserController extends Controller
     {
         $user = User::where('slug', $slug)->first();
         $booking = Booking::with(['user', 'room',])->where('user_id', $user->id)->get();
-        return view('user-detail', ['user' => $user, 'booking' => $booking]); 
+        return view('user-detail', ['user' => $user, 'booking' => $booking]);
     }
 
     public function approve($slug)

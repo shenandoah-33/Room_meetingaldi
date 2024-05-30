@@ -200,5 +200,10 @@ html[data-bs-theme="light"] .theme-toggle .fa-sun {
     display: none;
 }
 
-/* table */
+/* card profil */
 
+.profile-image {
+    max-height: 100px; /* Menyesuaikan dengan tinggi maksimum */
+    object-fit: cover; /* Memastikan gambar menyesuaikan tanpa mengubah proporsi */
+    width: 100%; /* Mengisi seluruh lebar card */
+}

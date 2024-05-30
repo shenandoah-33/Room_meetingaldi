@@ -60,6 +60,14 @@
                         <label for="phone">No. Telp</label>
                     </div>
                     <div class="input-field">
+                        <input type="alamat" class="input" id="alamat" required=""  autocomplete="off" name="alamat">
+                        <label for="alamat">Alamat</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="kategori_pengguna" class="input" id="kategori_pengguna" required=""  autocomplete="off" name="kategori_pengguna">
+                        <label for="kategori_pengguna">Kategori Pengguna</label>
+                    </div>
+                    <div class="input-field">
                         <input type="biro" class="input" id="biro" required=""  autocomplete="off" name="biro">
                         <label for="biro">Biro</label>
                     </div>
